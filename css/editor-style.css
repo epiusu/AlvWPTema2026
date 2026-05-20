@@ -1,0 +1,52 @@
+/*
+ * WP Alveren — Editor Style
+ * WordPress Gutenberg / Klasik editör görsel uyumu.
+ */
+
+body {
+	font-family: 'Inter', 'Ubuntu', system-ui, sans-serif;
+	font-size: 16.5px;
+	line-height: 1.85;
+	color: #1e2640;
+	max-width: 860px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Poppins','Ubuntu','Inter',system-ui,sans-serif;
+	font-weight: 700;
+	color: #0f1520;
+	letter-spacing: -.02em;
+}
+
+a { color: #c0392b; }
+
+blockquote {
+	border-left: 4px solid #c0392b;
+	margin: 1.4em 0;
+	padding: 12px 18px;
+	background: #fdf5f4;
+	border-radius: 0 6px 6px 0;
+	font-style: italic;
+}
+
+code {
+	background: #f0f0f0;
+	padding: 2px 6px;
+	border-radius: 4px;
+	color: #c0392b;
+	font-size: 13px;
+}
+
+pre {
+	background: #1e1e1e;
+	color: #d4d4d4;
+	padding: 16px 20px;
+	border-radius: 8px;
+	overflow: auto;
+}
+
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #e4e8f0; padding: 8px 12px; }
+thead th { background: #f1f3f8; }
