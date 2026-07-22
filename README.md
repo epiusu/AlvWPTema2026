@@ -164,7 +164,7 @@ wp theme install /path/to/AlvWPTema2026 –activate
 
 // Tema desteği ekleme add\_theme\_support( 'custom-logo', array( 'height' =\> 80, 'width'  =\> 260, 'flex-height' =\> true, ) );
 
-// Menü alanları kaydetme register\_nav\_menus( array( 'primary' =\> \_\_( 'Üst Menü (Navbar)', 'alveren' ), 'footer'  =\> \_\_( 'Alt Menü (Footer)', 'alveren' ), 'mobile'  =\> \_\_( 'Mobil Drawer Menüsü', 'alveren' ), ) );
+// Menü alanları kaydetme register\_nav\_menus( array( 'primary' =\> \_\_( 'Üst Menü (Navbar)', 'altema' ), 'footer'  =\> \_\_( 'Alt Menü (Footer)', 'altema' ), 'mobile'  =\> \_\_( 'Mobil Drawer Menüsü', 'altema' ), ) );
 
 
 **📁 Dosya Yapısı**
@@ -245,7 +245,7 @@ functions.php             \# Tema fonksiyonları ve hook'lar
 **AJAX Live Search**
 
 
-// functions.php içinde tanımlı add\_action( 'wp\_ajax\_alv\_live\_search', 'alveren\_live\_search' ); add\_action( 'wp\_ajax\_nopriv\_alv\_live\_search', 'alveren\_live\_search' );
+// functions.php içinde tanımlı add\_action( 'wp\_ajax\_alv\_live\_search', 'altema\_live\_search' ); add\_action( 'wp\_ajax\_nopriv\_alv\_live\_search', 'altema\_live\_search' );
 
 // Kullanım (frontend - main.js) fetch(alvData.ajaxUrl, \{ method: 'POST', body: new URLSearchParams(\{ action: 'alv\_live\_search', q: 'arama\_terimi' \}) \})
 
@@ -253,7 +253,7 @@ functions.php             \# Tema fonksiyonları ve hook'lar
 **Beğen (Like) Sistemi**
 
 
-// AJAX ile beğeni artırma add\_action( 'wp\_ajax\_alv\_like', 'alveren\_like\_handler' ); add\_action( 'wp\_ajax\_nopriv\_alv\_like', 'alveren\_like\_handler' );
+// AJAX ile beğeni artırma add\_action( 'wp\_ajax\_alv\_like', 'altema\_like\_handler' ); add\_action( 'wp\_ajax\_nopriv\_alv\_like', 'altema\_like\_handler' );
 
 // IP bazlı tekrar beğenme engelleme $ip\_key = 'alv\_liked\_ips\_' . $post\_id;
 
@@ -264,10 +264,10 @@ functions.php             \# Tema fonksiyonları ve hook'lar
 | Fonksiyon | Açıklama | Parametreler |
 | :-: | :-: | :-: |
 | `alv\_option($key, $default)` | Tema ayarlarını okur | `$key`: ayar anahtarı, `$default`: varsayılan değer |
-| `alveren\_cat\_total($cat\_id)` | Kategori + alt kategori toplam yazı sayısı | `$cat\_id`: kategori ID |
-| `alveren\_breadcrumb()` | Breadcrumb HTML çıktısı üretir | Yok |
-| `alveren\_pagination($query)` | Sayfalama linkleri oluşturur | `$query`: WP\_Query objesi (opsiyonel) |
-| `alveren\_has\_sidebar()` | Sidebar var mı kontrolü | Her zaman `false` döner (full-width) |
+| `altema\_cat\_total($cat\_id)` | Kategori + alt kategori toplam yazı sayısı | `$cat\_id`: kategori ID |
+| `altema\_breadcrumb()` | Breadcrumb HTML çıktısı üretir | Yok |
+| `altema\_pagination($query)` | Sayfalama linkleri oluşturur | `$query`: WP\_Query objesi (opsiyonel) |
+| `altema\_has\_sidebar()` | Sidebar var mı kontrolü | Her zaman `false` döner (full-width) |
 
 
 **🔧 Geliştirici Notları**
@@ -280,7 +280,7 @@ functions.php             \# Tema fonksiyonları ve hook'lar
 
 **Theme Name: AlvWPTema2026 Child**
 
-**Theme URI: https://alveren.com.tr/child**
+**Theme URI: https://altema.com.tr/child**
 
 **Description: AlvWPTema2026 için child tema**
 
@@ -323,7 +323,7 @@ functions.php             \# Tema fonksiyonları ve hook'lar
 **Çeviri (Translation)**
 
 
-// functions.php define( 'ALV\_TEXT', 'alveren' );
+// functions.php define( 'ALV\_TEXT', 'altema' );
 
 // Kullanım echo \_\_( 'Hoşgeldiniz', ALV\_TEXT );
 
@@ -331,7 +331,7 @@ functions.php             \# Tema fonksiyonları ve hook'lar
 ***`.pot` *dosyası oluşturmak için:**
 
 
-wp i18n make-pot . languages/alveren.pot
+wp i18n make-pot . languages/altema.pot
 
 
 **🤝 Katkıda Bulunma**
